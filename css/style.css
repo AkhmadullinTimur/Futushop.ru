@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: rgb(238, 238, 238);
+    overflow-x: hidden;
+ }
+h2{
+    position: relative;
+    left: 19%;
+    font-size: 45px;
+}
+ /* HEADER */
+#container{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 5px solid rgb(15, 15, 48);
+    border-top: 4px solid rgb(15, 15, 48);
+}
+#mainnav {
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    height: 70px;
+    background-color: rgb(29, 175, 180);
+ }
+ #mainnav a{
+    font-size: 40px;
+    font-weight: 600;
+    color:  rgb(240, 240, 240);
+    text-decoration: none;
+    z-index: 1;
+    transition: 0.5s;
+ }
+ #mainnav a:hover{
+    margin-bottom: 10px;
+    transition: 0.3s;
+ }
+ #mainnav a:active{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    transition: 0.3s;
+ }
+ #gif_snow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url(https://kalejdoskopphotoshopa.ru/wp-content/uploads/2012/12/snow12.gif);
+    z-index: 0;
+ }
+ #up_nav{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(240, 240, 240);
+ }
+ #geo{
+    position: absolute;
+    left: 13%;
+    padding: 5px;
+ }
+#log_but{
+    color: black;
+    position: absolute;
+    right: 5%;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#reg_but:hover, #log_but:hover{
+    color:rgb(29, 175, 180);
+    transition: 0.3s;
+}
+ #info_nav{
+     display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    padding-left: 8%;
+ }
+ #info_nav>h1{
+    padding: 9px;
+    font-size: 40px;
+ }
+ #info_nav>img{
+     width: 60px;
+ }
+ #container>img{
+    width: 70px;
+    background-color: rgb(14, 88, 95);
+    transition: 0.3s;
+ }
+ #container>img:hover{
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+ #shop_list{
+    position: absolute;
+    top: 17%;
+    right: 0px;
+    border-radius: 0 0 10px 10px;
+    width: 350px;
+    height: 175px;
+    background-color: rgb(18, 95, 105);
+    color: white;
+    border-top: 4px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    display: none;
+    padding: 15px 30px;
+ }
+ #korzina_text{
+     color: white;
+     margin-bottom: 10px;
+ }
+ /* HEADER */
+ /* MAIN */
+ #main_slider{
+     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .slide {
+    width: 900px;
+    height: 600px;
+  }
+  #slides_wrapper {
+    width: 2700px;
+    display: flex;
+  }
+  .viewport {
+    width: 900px;
+    height: 600px;
+    border: solid 3px black;
+    overflow: hidden;
+  }
+  nav{
+      display: flex;
+      justify-content: center;
+  }
+  #btn1, #btn2, #btn3{
+      display: block;
+      background-color: grey;
+      border-radius: 50%;
+      padding: 12px;
+      text-align: center;
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px;
+      cursor: pointer;
+
+  }
+  #btn1:hover, #btn2:hover, #btn3:hover{
+      background-color: rgb(102, 101, 101);
+  }
+  #btn1:active, #btn2:active, #btn3:active{
+    background-color: rgb(61, 61, 61);
+}
+  .show1{
+      transform: rotateX(0);
+      transition: 0.6s;
+  }
+  .show2{
+      transform: translateX(-900px);
+      transition: 0.6s;
+  }
+  .show3{
+      transform: translateX(-1800px);
+      transition: 0.6s;
+  }
+  #pic2 {
+      background-color: #d5a;
+  }
+  #pic3 {
+      background-color: #fc5;
+  }
+  #main_cards{
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+#cards_row_1, #cards_row_2{
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+#card_first, #card_second, #card_third, #card_fourth, #card_fivth, #card_sixth{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin-bottom: 5%;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 4px 4px 2px rgb(75, 75, 75);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#card_first>img, #card_second>img, #card_third>img, #card_fourth>img, #card_fivth>img, #card_sixth>img{
+    width: 250px;
+    height: 250px;
+    margin-top: 4px;
+}
+#card_first>p, #card_second>p, #card_third>p, #card_fourth>p, #card_fivth>p, #card_sixth>p{
+    position: relative;
+    top:2%;
+    font-size: 20px;
+}
+#card_row_low{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+#card_row_low>p{
+    font-size: 27px;    
+}
+#button_image_cards{
+    height: 37px;
+    width: 37px;
+}
+#card_first:hover, #card_second:hover, #card_third:hover, #card_fourth:hover, #card_fivth:hover, #card_sixth:hover{
+    box-shadow: 0 0 4px 3px rgb(146, 146, 146);
+    transition: 0.3s;
+}
+#add_first_card, #add_second_card, #add_third_card, #add_fourth_card, #add_fivth_card, #add_sixth_card{
+    padding: 2px;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+#add_first_card:hover, #add_second_card:hover, #add_third_card:hover, #add_fourth_card:hover, #add_fivth_card:hover, #add_sixth_card:hover{
+    background-color: rgb(252, 198, 97);
+    padding: 2px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+#add_first_card:active, #add_second_card:active, #add_third_card:active, #add_fourth_card:active, #add_fivth_card:active, #add_sixth_card:active{
+    background-color: rgb(255, 166, 0);
+}
+  /* MAIN */
+  /* FOOTER */
+  #but{
+    display: flex;
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgb(97, 179, 182);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 15px 23px;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    opacity: 0;
+  }
+  /* FOOTER */

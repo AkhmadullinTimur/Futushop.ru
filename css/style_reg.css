@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+
+.reg_body {
+	background: linear-gradient(90deg,rgb(135, 196, 201), rgb(255, 255, 255));
+	background-size: 200% 200%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+    50% {
+		background-position: 100% 50%;
+    }
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav a{
+    display: block;
+    font-size: 20px;
+    background-color: rgb(85, 109, 124);
+    text-align: center;
+    padding: 1.5% 5% 1.5% 0.2%;
+    color: white;
+    text-decoration: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.4s;
+    box-shadow:  5px 0 10px lightsteelblue;
+}
+
+nav a:hover{
+    background-color: rgb(105, 179, 202);
+    transition: 0.4s;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    background-color: rgba(58, 57, 57, 0.5);
+    margin-top: 15%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.button{
+    color: white;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(59, 59, 59);
+    transition: 0.4s;
+}
+
+.button:hover{
+    background-color: rgb(109, 108, 108);
+    color: rgb(175, 252, 255);
+    transition: 0.4s;
+}
+
+.button:active{
+    background-color: rgb(34, 34, 34);
+    box-shadow: cornflowerblue;
+    outline: none;
+    transition: 0.4s;
+}
+
+form a{
+    color: rgb(198, 255, 231);
+}
+
+form p{
+    margin-top: 10px;
+}
+
+.log_form{
+    width: 300px;
+    margin: auto;
+    background-color: rgba(58, 57, 57, 0.5);
+    margin-top: 15%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input{
+    height: 30px;
+}
+
+form input:focus{
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#user_form{
+    color: rgb(198, 255, 231);
+    font-size: 25px;
+}
