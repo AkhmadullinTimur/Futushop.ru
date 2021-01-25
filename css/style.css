@@ -7,6 +7,7 @@
 body{
     background-color: rgb(238, 238, 238);
     overflow-x: hidden;
+    overflow-y: hidden;
  }
 h2{
     position: relative;
@@ -14,6 +15,26 @@ h2{
     font-size: 45px;
 }
  /* HEADER */
+#pre_loader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+    transition: 0.6s;
+}
+#obj_1{
+    position: absolute;
+    background-color: rgb(42, 141, 180);
+    border-radius: 50%;
+    z-index: 1;
+}
+#obj_2{
+    position: absolute;
+    background-color: rgb(101, 217, 221);
+    border-radius: 50%;
+    z-index: 2;
+}
 #container{
     display: flex;
     justify-content: space-around;
@@ -55,8 +76,18 @@ h2{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-image: url(https://kalejdoskopphotoshopa.ru/wp-content/uploads/2012/12/snow12.gif);
     z-index: 0;
+ }
+ #theme{
+     position: absolute;
+     right: 30px;
+     top: 30px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+ #theme:hover{
+     padding: 5px;
+     transition: 0.3s;
  }
  #up_nav{
     width: 100%;
@@ -124,9 +155,16 @@ h2{
      color: white;
      margin-bottom: 10px;
  }
+ #indic{
+    width: 0%;
+    height: 5px;
+    background-color: rgb(34, 103, 105);
+    position: fixed;
+    top: 70px;
+ }
  /* HEADER */
  /* MAIN */
- #main_slider{
+ #main_slider, #second_slider{
      margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -140,6 +178,10 @@ h2{
     width: 2700px;
     display: flex;
   }
+  #slides_wrapper2{
+    width: 3600px;
+    display: flex;
+  }
   .viewport {
     width: 900px;
     height: 600px;
@@ -150,7 +192,7 @@ h2{
       display: flex;
       justify-content: center;
   }
-  #btn1, #btn2, #btn3{
+  #btn1, #btn2, #btn3, #btn1_2, #btn2_2, #btn3_2, #btn4_2{
       display: block;
       background-color: grey;
       border-radius: 50%;
@@ -180,6 +222,10 @@ h2{
       transform: translateX(-1800px);
       transition: 0.6s;
   }
+  .show4{
+    transform: translateX(-2700px);
+    transition: 0.6s;
+}
   #pic2 {
       background-color: #d5a;
   }
@@ -246,13 +292,16 @@ h2{
     transition: 0.4s;
 }
 #add_first_card:hover, #add_second_card:hover, #add_third_card:hover, #add_fourth_card:hover, #add_fivth_card:hover, #add_sixth_card:hover{
-    background-color: rgb(252, 198, 97);
+    background-color: rgb(75, 194, 184);
     padding: 2px;
     border-radius: 3px;
     transition: 0.3s;
 }
 #add_first_card:active, #add_second_card:active, #add_third_card:active, #add_fourth_card:active, #add_fivth_card:active, #add_sixth_card:active{
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(34, 119, 119);
+}
+#main_text_p{
+    text-align: center;
 }
   /* MAIN */
   /* FOOTER */
